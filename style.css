@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Plaster&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+:root {
+    --cor0: #5314da;
+    --cor1: #404EE6;
+    --cor2: #0090c1;
+    --cor3: #4082E6;
+    --cor4: #018989;
+    --cor5: #8D94E6;
+    --cor6: #4fd2fd;
+}
+
+
+body {
+    background-color: var(--cor6);
+}
+
+header {
+
+    color: aliceblue;
+    background-image: linear-gradient(to top, #21045f, #404EE6);
+}
+
+h1 {
+    font-family: "Victor Mono", monospace;
+    font-size: 3em;
+    padding: 20px;
+    text-align: center;
+    text-shadow: 2px 3px 4px #0d0125;
+}
+
+.ph1 {
+
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--cor4);
+    
+
+
+}
+
+nav>a {
+    padding: 7px;
+    padding-bottom: 0%;
+    text-decoration: none;
+    color: aqua;
+    /* margin-top: 20px; */
+    margin: 10px;
+    font-weight: bold;
+    border-radius: 2px;
+    transition-duration: .5s;
+    
+}
+
+h2 {
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    color: #21045f;
+    margin-left: 20px;
+    font-family: "Plaster", system-ui;
+    border-radius: 2px;
+}
+
+h3 {
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    /* text-shadow: 1px 1px 1px #21045f; */
+    color: #21045f;
+    padding: 3px;
+    margin-left: 20px;
+    font-family: "Plaster", system-ui;
+    border-radius: 2px;
+}
+
+h4 {
+    padding: 5px;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    border-radius: 4px 4px 0 0;
+}
+
+main {
+    border-radius: 0 0 10px 10px;
+    background-color: whitesmoke;
+    /* width: 820px; abaixo tornei o conteúdo adaptavel entre 300 e 1000px */
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    /* para a imagem não crescer em telas grandes */
+    margin-inline: auto;
+    padding-bottom: auto;
+    /* padding: 20px; */
+    /* padding: 20px;esse padding colocou minha lu pra dentro */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.582);
+
+}
+
+main a {
+    padding: 2px;
+    background-color: var(--cor6);
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    /* dexa negrito */
+    box-shadow: 0px 0px 1px rgb(0, 0, 0);
+
+
+}
+
+main a:hover {
+    background-color: rgba(128, 255, 0, 0.897);
+    transition-duration: .5s;
+}
+
+
+p {
+    padding-top: 10px;
+    padding-bottom: 40px;
+    margin-bottom: 10px;
+    margin-inline: 10px;
+    text-align: justify;
+    text-indent: 40px;
+}
+
+.droids {
+    /* padding-left: 30px; */
+    max-width: 700px;
+    display: block;
+    margin: auto;
+
+}
+
+.irina {
+
+    /* padding-right: 7px; */
+    display: block;
+    margin: auto;
+    /* width: 800px; */
+
+
+}
+
+.bugdroid {
+    display: block;
+    margin: auto;
+    padding-inline: 185px;
+}
+
+div.video>iframe {
+
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    /* height: 400px;
+    margin-top: -46px;
+    margin-bottom: -55px; */
+
+    /* OBS:tornei o video responsivo wrap o ifreme numa div class=video, position:relative;> padding-bottom:...%
+
+    e no iframe, position:absolute;> top:...%;> left:...%;> width: %;> height: %; */
+}
+
+div.video {
+    /* max-width: 940px; */
+    /* min-width: 940px; */
+    background-color: var(--cor4);
+    margin-top: -45px;
+    margin-bottom: -55px;
+    /* width: 940px; */
+    /* padding-right: 7px; */
+    /* display: block; */
+    /* margin: auto; */
+    border-radius: 10px;
+    position: relative;
+    padding-bottom: 57%;
+}
+
+
+aside {
+    margin: auto;
+    max-width: 940px;
+    background-color: rgba(0, 255, 255, 0.363);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.37);
+}
+
+aside>ul {
+
+    /* color: var(--cor0); */
+    font-weight: bold;
+    margin-left: 40px;
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: "🧁\00a0\00a0";
+    /* coloquei esse emoji e os 2 contra-abarras e códs para dar espaço no style-type🧁\00a0\00a0. 2x o cód pra aumentar o espaço(nbsp) */
+}
+
+footer a:hover {
+    background-color: rgba(128, 255, 0, 0.897);
+    transition-duration: .5s;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+footer>a {
+    text-decoration: none;
+}
+
+footer {
+    color: black;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--cor2), transparent);
+    margin: 5px;
+}
+
+section {
+    border-radius: 7px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #0091c17a;
+}
+
+
+
+
+/* ul {
+        margin-left: 20px;
+    } */
+
+/* nessa lu o type disc por padrão é off-side, estava pra fora do main, coloquei pra dentro dando um padding: 20px; no main.   */
+
+
+
+
+
+
+
+
+/* AZUL= #404EE6, #5314da,#0090c1 ,#4082E6, #018989, #8D94E6, # 38aecc, */
